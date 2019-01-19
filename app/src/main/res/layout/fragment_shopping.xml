@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已选()"
+            />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.0"
+            android:layout_centerVertical="true"
+            android:textColor="#ff00"
+            android:layout_toLeftOf="@id/btn"
+            android:layout_marginRight="5dp"
+            />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下单"
+            android:background="#ff00"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
